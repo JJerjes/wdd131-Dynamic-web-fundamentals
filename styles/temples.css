@@ -1,0 +1,145 @@
+@media (max-width: 980px) {
+    #menu {
+        display: block;
+    }
+
+    nav {
+        display: none;
+    }
+
+    nav.open {
+        display: flex;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    header nav {
+        flex-direction: column;
+        justify-content: start;
+        padding: 15px 0 5px 0;
+    }
+    
+    header nav a {
+        padding: 10px;
+        display: flex;
+        justify-content: start;
+    }
+
+    header nav a:hover {
+        color: orangered;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: start;
+    }
+    
+    .photos {
+        display: grid;
+        grid-template-columns: auto auto;
+        width: auto;
+    }
+   
+}   
+
+
+@media (max-width: 655px) {
+    #menu {
+        display: block;
+    }
+
+    nav {
+        display: none;
+    }
+
+    nav.open {
+        display: flex;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    header nav {
+        flex-direction: column;
+        justify-content: start;
+        padding: 15px 0 5px 0;
+    }
+    
+    header nav a {
+        padding: 10px;
+        display: flex;
+        justify-content: start;
+    }
+
+    header nav a:hover {
+        color: orangered;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: start;
+    }
+    
+    .photos {
+        display: grid;
+        grid-template-columns: auto;
+        width: auto;
+    }
+   
+}   
+
+@media (max-width: 375px) {
+    #menu {
+        display: block;
+    }
+
+    nav {
+        display: none;
+    }
+
+    nav.open {
+        display: flex;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    header nav {
+        flex-direction: column;
+        justify-content: start;
+        padding: 15px 0 5px 0;
+    }
+    
+    header nav a {
+        padding: 10px;
+        display: flex;
+        justify-content: start;
+    }
+
+    header nav a:hover {
+        color: orangered;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: start;
+    }
+    
+    .photos {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: auto;
+    }
+   
+}   
+

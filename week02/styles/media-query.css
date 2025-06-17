@@ -1,0 +1,45 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+}
+
+h1 {
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: white;
+    margin: 20px;
+}
+
+main section {
+    border: 10px solid rgba(47, 138, 181, 0.568);
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+section h3, p{
+    padding: 20px;
+}
+
+footer {
+    padding: 20px;
+    background-color: rgba(47, 138, 181, 0.568);
+}
+
+

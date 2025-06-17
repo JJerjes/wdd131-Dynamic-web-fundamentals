@@ -1,0 +1,130 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+}
+
+header {
+    background-color: rgb(27, 6, 27);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+form {
+    background-color: rgba(0, 0, 0, 0.05); 
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+input[type="text"],
+input[type="date"],
+textarea,
+select {
+    display: block;
+    border-radius: 6px;
+    padding: .75rem;
+    width: 100%;
+    border: none;
+    margin-bottom: 20px;
+    max-width: 500px;
+    width: 100%;
+}
+
+.rating-group {
+    margin: 20px 0;
+}
+
+.rating-group span {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.stars {
+    display: flex;
+    justify-content: space-between;
+}
+
+.stars label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.features {
+    margin-bottom: 20px;
+    border: none;
+}
+
+.features label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+fieldset {
+    border: none;
+}
+
+input[type="checkbox"] {
+    margin-right: 6px;
+}
+legend, .check {
+    font-weight: bold;
+}
+
+.check {
+    margin-bottom: 20px;
+}
+
+.feedback {
+    margin: 28px 0 0 0;
+}
+
+input[type="submit"] {
+    border: none;
+    background-image: linear-gradient(#c912a1, #610469);
+    color: #fff;
+    border-radius: 7px;
+    padding: 0.8rem;
+    width: 100%;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-image: linear-gradient(#ff27c3, #7a1a88);
+}
+
+#fname:required {
+    border-right: 8px solid red;
+}
+
+#fname:required:valid {
+    border-right: 8px solid green;
+}
+
+footer {
+    background-color: #56155f;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+}

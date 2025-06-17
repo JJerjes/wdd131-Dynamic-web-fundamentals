@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/form.css">
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Procuct Review</h1>
+    </header>
+    <main>
+        <form action="review.html" method="get">
+            <label for="product">Product</label>
+            <select name="product" id="product" required>
+                <option value="" disabled selected>Choose a Product...</option>
+                  
+            </select>
+
+            <div class="rating-group">
+                <span>Overall Rating</span>
+                <div class="stars">
+                    <label for="hello"><input id="hello" type="radio" name="stars" value="1" required>☆</label>
+                    <label for="hello1"><input id="hello1" type="radio" name="stars" value="2">☆☆</label>
+                    <label for="hello2"><input id="hello2" type="radio" name="stars" value="3">☆☆☆</label>
+                    <label for="hello3"><input id="hello3" type="radio" name="stars" value="4">☆☆☆☆</label>
+                    <label for="hello4"><input id="hello4" type="radio" name="stars" value="5">☆☆☆☆☆</label>
+                </div>
+            </div>
+           
+            <label for="date">Date of Installation</label>
+            <input type="date" id="date" name="date">
+
+            <fieldset>
+                <legend>Wich features did you find useful in the product?</legend>
+                <p class="check">(Check all that apply)</p>
+                <label><input type="checkbox" name="features" value="durability">Durability</label>
+                <label><input type="checkbox" name="features" value="ease">Ease of Use</label>
+                <label><input type="checkbox" name="features" value="performance">Performance</label>
+                <label><input type="checkbox" name="features" value="esign">Design</label>
+            </fieldset>     
+
+            <label for="feedback" class="feedback">Written Revie (optional)</label>
+            <textarea name="feedback" id="feedback" rows="4"></textarea>
+
+            <label for="fname">Your Name(optional)</label>
+            <input type="text" id="fname" name="fname" required>
+
+            <input type="submit" value="Post Review">
+        </form>
+        
+    </main>
+    <footer>
+        <p><span id="yearName"></span></p>
+        <p><span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
